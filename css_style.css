@@ -1,0 +1,116 @@
+/* ===== Body ===== */
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#050b1a;
+    color:white;
+    text-align:center;
+}
+
+/* ===== Header ===== */
+.topbar{
+    background:#020818;
+    padding:25px;
+    box-shadow:0 4px 10px #000;
+}
+
+/* ===== Hero Section ===== */
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin:40px auto;
+}
+.hero-img img{
+    width:100px;          /* Fixed 100px */
+    height:100px;         /* Fixed 100px */
+    border-radius:50%;    /* Circle */
+    border:3px solid #00ffd5;
+    box-shadow:0 0 20px #00ffd5; /* Shadow glow */
+    transition:0.3s;
+}
+.hero-img img:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 35px #00ff99;
+}
+.hero-text{
+    max-width:500px;
+    margin-left:20px;
+}
+.hero-text h2{
+    margin:0;
+    color:#00ffd5;
+}
+.hero-text p{
+    color:#ccc;
+    line-height:1.6;
+    margin:10px 0 20px 0;
+}
+.hero-text button{
+    background: linear-gradient(145deg, #00ffd5, #00c4a7);
+    color:#001;
+    border:none;
+    padding:12px 18px;
+    margin:5px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+.hero-text button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00ff99;
+}
+
+/* ===== Courses / Labs Grid ===== */
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin:30px;
+}
+.course-card{
+    background:#0b1733;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px #000;
+    transition:0.3s;
+}
+.course-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 30px #00ffd5;
+}
+.course-card h3{
+    margin-top:0;
+    color:#00ffd5;
+    font-size:18px;
+}
+.course-card button{
+    margin-top:10px;
+    width:100%;
+    background: linear-gradient(145deg, #00ffd5, #00c4a7);
+    border:none;
+    color:#001;
+    padding:10px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.3s;
+}
+.course-card button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00ff99;
+}
+
+/* ===== Footer ===== */
+footer{
+    margin:30px;
+    color:#aaa;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:600px){
+    .hero-img img{width:100px;height:100px;}
+    .hero-text button{padding:10px 12px;font-size:14px;}
+}
