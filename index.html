@@ -77,5 +77,18 @@ if (user !== pass) {
   window.location = "https://google.com";
 }
   </script>
+  
+  <script>
+window.onload = function() {
+
+  var msg = new SpeechSynthesisUtterance();
+  msg.text = "Hi Shahryar, Welcome to Cyber Security Lab";
+  msg.lang = "ur-PK";   // Urdu voice
+  msg.rate = 0.9;      // Smooth speed
+  msg.pitch = 1.1;     // Soft tone
+
+  window.speechSynthesis.speak(msg);
+}
+  </script>
 </html>
 <script src="js/script.js"></script>
